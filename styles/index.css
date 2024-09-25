@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.content {
+    margin-top: 0;
+}
+.i1{
+    margin-left: 20px;
+    width: 3.5%;
+    align-items: flex-start;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/free-vector/gradient-black-background-with-golden-textures_52683-76896.jpg?t=st=1727243221~exp=1727246821~hmac=3297f38b92201c363057f278f4ea426f06f4e94569187f442f8fd371f5043510&w=1380'); /* Chemin de l'image */
+    background-size: cover; /* Assure que l'image couvre toute la section */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    color: white;
+    margin-top: 80px;
+    z-index: 1; /* Assure que l'image est derrière le contenu */
+}
+
+.profile-pic {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    display: block;
+    margin: 1rem auto;
+    object-fit: cover; /* Cette propriété garde le ratio d'aspect de l'image */
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: crimson;
+}
+
+.detel {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+.section-title {
+    background-color: orange;
+    color: white;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+footer {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    /*position: fixed;*/
+    bottom: 0;
+    width: 100%;
+}
