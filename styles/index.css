@@ -37,6 +37,19 @@ header {
     z-index: 1; /* Assure que l'image est derrière le contenu */
 }
 
+.jero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/premium-vector/white-abstract-background-with-golden-lines_583398-449.jpg?w=996'); /* Chemin de l'image */
+    background-size: cover; /* Assure que l'image couvre toute la section */
+    background-position: center; /* Centre l'image */
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    color: #000000;
+    /*margin-top: 80px;*/
+    z-index: 1; /* Assure que l'image est derrière le contenu */
+}
+
 .profile-pic {
     width: 175px;
     height: 175px;
