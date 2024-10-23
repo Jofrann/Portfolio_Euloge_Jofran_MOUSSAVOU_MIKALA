@@ -1,56 +1,167 @@
-
-body {
-    font-family: Arial, sans-serif;
+* {
     margin: 0;
     padding: 0;
-    background-image: "https;//img.freepik.com/premium-photo/background-image-stack-orange-blue-paper_289284-289.jpg?w=900";
+    font-family: sans-serif;
+    box-sizing: border-box; /* Assure que les marges et paddings sont inclus dans la largeur */
 }
+
+html, body {
+    width: 100%;
+    overflow-x: hidden; /* Empêche le débordement horizontal */
+}
+
 header {
-    background-color: orange;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+}
+
+.content {
+    margin-top: 0;
+}
+
+.i1 {
+    margin-left: 20px;
+    width: 3.5%;
+    align-items: flex-start;
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://img.freepik.com/free-vector/gradient-black-background-with-golden-textures_52683-76896.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: white;
-    padding: 1rem;
-    text-align: center;
+    margin-top: 80px;
+    z-index: 1;
 }
-nav {
-    background-color: #000000;
-    overflow: hidden;
+
+.jero {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-image: url('https://img.freepik.com/premium-vector/white-abstract-background-with-golden-lines_583398-449.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #000000;
+    z-index: 1;
 }
-nav a {
-    float: left;
+
+.emoji-container {
+    position: relative;
+    font-size: 100px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.emoji-body {
+    font-size: 50px;
+    display: inline-block;
+}
+
+.emoji-hand {
+    font-size: 50px;
+    position: absolute;
+    width: 10%;
+    top: -10px;
+    left: -10px;
+    transform-origin: bottom center;
+    animation: wave 1s infinite;
+    display: inline-block;
+}
+
+@keyframes wave {
+    0% { transform: rotate(0deg); }
+    20% { transform: rotate(-10deg); }
+    40% { transform: rotate(8deg); }
+    60% { transform: rotate(-10deg); }
+    80% { transform: rotate(8deg); }
+    100% { transform: rotate(0deg); }
+}
+
+.emoji-face {
+    font-size: 80px;
+}
+
+.profile-pic {
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
     display: block;
-    color: white;
-    text-align: center;
-    padding: 1rem 2rem;
+    margin: 1rem auto;
+    object-fit: cover;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
     text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
 }
-nav a:hover {
-    background-color: #575757;
+
+nav ul li a:hover {
+    color: crimson;
 }
-main {
-    padding: 2rem;
+
+.detel1 {
+    font-size: 20px;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
+
+.detel2 {
+    font-size: 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 20px 0;
+}
+
+.dgauche {
+    width: 48%;
+    text-align: center;
+}
+
+.ddroite {
+    width: 48%;
+    text-align: center;
+}
+
 section {
     margin-bottom: 2rem;
 }
+
 footer {
     background-color: rgb(0, 0, 0);
     color: white;
     text-align: center;
     padding: 1rem;
-    position: fixed;
-    bottom: 0;
     width: 100%;
-}
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    display: block;
-    margin: 1rem auto;
-}
-.section-title {
-    background-color: orange;
-    color: white;
-    padding: 0.5rem;
-    text-align: center;
+    position: relative;
+    bottom: 0;
 }
