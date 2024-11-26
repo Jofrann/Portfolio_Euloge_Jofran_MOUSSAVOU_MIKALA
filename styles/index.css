@@ -8,6 +8,7 @@
 html, body {
     width: 100%;
     overflow-x: hidden; /* Empêche le débordement horizontal */
+    background-color: #171414;
 }
 
 header {
@@ -16,7 +17,7 @@ header {
     left: 0;
     width: 100%;
     background-color: black;
-    padding: 20px 0;
+    padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     z-index: 1000;
 }
@@ -24,6 +25,19 @@ header {
 .content {
     margin-top: 0;
 }
+.content a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.content a:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 5px 10px rgb(110, 10, 182);
+}
+
 
 .i1 {
     margin-left: 20px;
@@ -35,7 +49,7 @@ header {
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: url('https://img.freepik.com/free-vector/gradient-black-background-with-golden-textures_52683-76896.jpg');
+    background-image: url('https://wallpapercave.com/wp/wp1904065.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -48,7 +62,7 @@ header {
     position: relative;
     width: 100%;
     height: auto;
-    background-image: url('https://img.freepik.com/premium-vector/white-abstract-background-with-golden-lines_583398-449.jpg');
+    background-image: url('https://img.freepik.com/free-photo/3d-rendering-modern-workspace-with-computer-mouse-dark-background_1142-41729.jpg?t=st=1732191967~exp=1732195567~hmac=c5c4137062bc22dab7c2eabef2396e1f4bfd64a35b1fef36bfca60f07a90e7ef&w=1380');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -63,34 +77,31 @@ header {
     align-items: center;
 }
 
-.emoji-body {
+.emoji-icon {
     font-size: 50px;
+    color: #9a1c1c; /* Couleur professionnelle */
     display: inline-block;
 }
 
-.emoji-hand {
-    font-size: 50px;
+.hand-icon {
+    font-size: 25px;
+    color: #9a1c1c;
     position: absolute;
     width: 10%;
-    top: -10px;
-    left: -10px;
+    top: 30px;
+    left: 45px;
     transform-origin: bottom center;
-    animation: wave 1s infinite;
+    animation: shake 1.5s infinite; /* Animation plus subtile */
     display: inline-block;
 }
 
-@keyframes wave {
-    0% { transform: rotate(0deg); }
-    20% { transform: rotate(-10deg); }
-    40% { transform: rotate(8deg); }
-    60% { transform: rotate(-10deg); }
-    80% { transform: rotate(8deg); }
-    100% { transform: rotate(0deg); }
+@keyframes shake {
+    0%, 100% { transform: rotate(0deg); }
+    25% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    75% { transform: rotate(-5deg); }
 }
 
-.emoji-face {
-    font-size: 80px;
-}
 
 .profile-pic {
     width: 175px;
@@ -122,8 +133,56 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: crimson;
+    color: rgb(110, 10, 182);
 }
+
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Empêche tout débordement */
+}
+
+.background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("https://img.freepik.com/free-photo/view-illuminated-neon-gaming-keyboard-setup-controller_23-2149529353.jpg?t=st=1732651017~exp=1732654617~hmac=fba8b56383933b98c83a5e3640fefb2420468357916007e5d77e297f18b9891a&w=1380");
+    background-size: cover;
+    background-position: center;
+    filter: blur(8px);
+    z-index: 1;
+}
+
+.content-c {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+#h1 {
+    color: #9700ff;
+    margin-bottom: 20px;
+}
+
+.hum {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #ffffff;
+}
+
 
 .detel1 {
     font-size: 20px;
@@ -152,9 +211,27 @@ nav ul li a:hover {
     text-align: center;
 }
 
-section {
-    margin-bottom: 2rem;
+.btn-competences {
+    display: inline-block;
+    background-color: #9700ff; /* Couleur du bouton */
+    color: white;
+    text-decoration: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+.btn-competences:hover {
+    background-color: #7d00cc; /* Couleur du bouton au survol */
+    transform: translateY(-5px); /* Effet de légère élévation au survol */
+}
+
+
+/*section {*/
+/*    margin-bottom: 2rem;*/
+/*}*/
 
 footer {
     background-color: rgb(0, 0, 0);
