@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles/P_FAT.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://img.freepik.com/vecteurs-premium/logo-lettre-j_648861-51.jpg">
+    <title>Développement Web</title>
+</head>
+<body>
+<header>
+    <div class="content">
+        <nav>
+            <img src="https://img.freepik.com/vecteurs-premium/logo-lettre-j_648861-51.jpg" alt="Logo" class="i1">
+            <br><br>
+            <a href="Projets.html" class="btn-retour"><i class="fas fa-arrow-left"></i> Retour</a>
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="Competences.html">Compétences</a></li>
+                <li><a href="Projets.html">Projets</a></li>
+                <li><a href="Contactez-Moi.html">Contactez-Moi</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<div id="projet">
+    <div class="container">
+        <div class="background"></div> <!-- Arrière-plan flou -->
+
+        <br><br>
+        <h1 id="h1">Développement Fiche d'Assignation de Tâches</h1>
+
+        <h1></h1>
+
+
+        <!-- Cadrans -->
+        <div class="grid-container">
+
+            <!-- Cadran 1 : Contexte -->
+            <div class="grid-item contexte">
+                <h2>Contexte</h2>
+                <p>Dans le cadre de la gestion d'équipes et de projets, une fiche d'assignation de tâches est nécessaire pour une meilleure organisation. L'application a pour objectif de faciliter l'assignation, le suivi et la gestion des tâches entre utilisateurs. Elle permet aux gestionnaires de projets de mieux gérer l'attribution des tâches et à chaque membre de suivre l'avancement de celles-ci.</p>
+                <p>Le projet a été conçu pour répondre à des besoins croissants d'efficacité dans le suivi des tâches entre plusieurs utilisateurs au sein d'une organisation.</p>
+            </div>
+
+            <!-- Cadran 2 : Besoins -->
+            <div class="grid-item besoins">
+                <h2>Besoins</h2>
+                <ul>
+                    <li>Créer un système de gestion des tâches avec assignation à différents utilisateurs.</li><br>
+                    <li>Permettre la visualisation et mise à jour des tâches par les utilisateurs et gestionnaires.</li><br>
+                    <li>Mettre en place un suivi de l'avancement des tâches.</li><br>
+                    <li>Intégration avec une base de données MySQL pour stocker les informations des tâches et des utilisateurs.</li><br>
+                    <li>Simplifier l'interface pour une utilisation facile et rapide.</li>
+                </ul>
+            </div>
+
+            <!-- Cadran 3 : Mise en œuvre -->
+            <div class="grid-item mise-en-oeuvre">
+                <h2>Mise en œuvre</h2>
+                <p>Le développement a été divisé en plusieurs étapes clés :</p>
+                <ul>
+                    <li><strong>Conception de la base de données :</strong> J'ai créé une base de données relationnelle avec MySQL, où les informations des utilisateurs, des tâches et leur progression étaient stockées.</li><br>
+                    <li><strong>Développement du back-end :</strong> J'ai utilisé PHP pour gérer la logique de traitement des tâches, notamment l'ajout, la modification, et la suppression de tâches.</li><br>
+                    <li><strong>Développement du front-end :</strong> La partie front-end a été réalisée en HTML, CSS, et JavaScript pour offrir une interface fluide et réactive permettant aux utilisateurs d'interagir avec les tâches de manière intuitive.</li><br>
+                </ul>
+                <p>Ce projet a permis de créer une première version fonctionnelle de l'application, bien qu'il y ait encore des améliorations possibles à apporter, notamment sur l'optimisation des requêtes et l'ajout de nouvelles fonctionnalités comme les notifications et les rappels.</p>
+            </div>
+
+            <!-- Cadran 4 : Réalisations -->
+            <div class="grid-item realisations">
+                <h2>Réalisations</h2>
+                <p><strong>Conception de la base de données :</strong> Création d'une base de données avec plusieurs tables pour gérer les utilisateurs et les tâches.</p>
+                <p><strong>Interface utilisateur :</strong> Conception d'une interface permettant aux utilisateurs d'ajouter et de modifier des tâches facilement. La plateforme propose également un système de filtres pour voir les tâches par statut (en cours, terminées, etc.).</p>
+                <p><strong>Technologies utilisées :</strong></p>
+                <ul>
+                    <li>HTML/CSS pour la structure et la mise en forme.</li>
+                    <li>JavaScript pour les interactions dynamiques avec l'utilisateur.</li>
+                    <li>PHP pour la gestion du back-end et des interactions avec la base de données MySQL.</li>
+                    <li>MySQL pour la gestion de la base de données relationnelle.</li>
+                </ul>
+                <br>
+                <p><strong>Fonctionnalités développées :</strong></p>
+                <ul>
+                    <li>Formulaire pour ajouter de nouvelles tâches.</li><br>
+                    <li>Page de gestion des tâches avec un tableau interactif.</li><br>
+                    <li>Fonction de mise à jour et de suppression des tâches.</li>
+                </ul>
+                <br>
+                <p><strong>Preuves :</strong></p>
+                <ul>
+                    <li><a href="img/Capture d'écran 2024-07-17 124328.png">Cliquez pour voir la capture d'écran de l'interface de connexion de l'utilisateur.</a></li>
+                    <li><a href="img/Capture d'écran 2024-11-19 171201.png">Cliquez pour voir le code de l'ajout de la table "taches" en pour la base donnée.</a></li>
+                </ul>
+            </div>
+
+            <!-- Cadran 5 : Compétences utilisées -->
+            <div class="grid-item competences">
+                <h2>Compétences Utilisées</h2>
+                <div class="competence-buttons">
+                    <a href="Competences_dev_web.html" class="competence-btn">
+                        <div class="btn-content">
+                            <i class="fas fa-code"></i>
+                            <span><strong>HTML</strong> pour la structure des pages web</span>
+                        </div>
+                    </a>
+                    <a href="Competences_dev_web.html" class="competence-btn">
+                        <div class="btn-content">
+                            <i class="fas fa-paint-brush"></i>
+                            <span><strong>CSS</strong> pour le design et la mise en forme responsive</span>
+                        </div>
+                    </a>
+                    <a href="Competences_dev_web.html" class="competence-btn">
+                        <div class="btn-content">
+                            <i class="fas fa-laptop-code"></i>
+                            <span><strong>JavaScript</strong> pour les interactions dynamiques</span>
+                        </div>
+                    </a>
+                    <a href="Competences_php.html" class="competence-btn">
+                        <div class="btn-content">
+                            <i class="fas fa-server"></i>
+                            <span><strong>PHP</strong> pour le développement back-end</span>
+                        </div>
+                    </a>
+                    <a href="Competences_mysql.html" class="competence-btn">
+                        <div class="btn-content">
+                            <i class="fas fa-database"></i>
+                            <span><strong>MySQL</strong> pour la gestion des données</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+</div>
+
+<footer>
+    &copy; 2024 Euloge Jofran MOUSSAVOU MIKALA. Tous droits réservés.
+</footer>
+</body>
+</html>
