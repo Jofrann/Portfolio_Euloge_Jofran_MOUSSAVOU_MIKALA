@@ -10,6 +10,11 @@ html, body {
     width: 100%;
     background-color: #171414;
     color: white;
+    /*background-image: url("https://e1.pxfuel.com/desktop-wallpaper/837/559/desktop-wallpaper-computer-tech-30-tech.jpg");*/
+    /*background-size: cover;*/
+    /*background-position: center;*/
+    /*!*filter: blur(8px);*!*/
+    /*z-index: 1;*/
 }
 
 .content {
@@ -99,99 +104,111 @@ header nav ul li a:hover {
     color: rgb(110, 10, 182);
 }
 
-/* Section des projets */
-#projets {
+
+/* Section Contact */
+#contact {
     margin-top: 120px;
     padding: 40px;
     font-family: Arial, sans-serif;
 }
 
 .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container-db {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#h1 {
+    margin-bottom: 20px;
+}
+
+.hum {
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 0 20px orangered;
+}
+
+.container {
     width: 80%;
     margin: auto;
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 40px;
+    font-size: 2rem;
+    margin-bottom: 20px;
     color: #9700ff;
 }
 
-.categorie {
-    margin-bottom: 50px;
+p {
+    font-size: 1.2rem;
+    color: #ddd;
+    margin-bottom: 40px;
 }
 
-.categorie h2 {
-    font-size: 2rem;
-    color: #fff;
-    margin-bottom: 20px;
-    border-bottom: 2px solid #9700ff;
-    padding-bottom: 5px;
-}
-
-.projet-list {
+.contact-links {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
-.projet {
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 10px;
-    width: 30%;
-    margin-bottom: 20px;
-    padding: 15px;
-    text-align: center;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+.contact-item {
+    margin: 15px;
 }
 
-.projet img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.projet:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
-}
-
-.projet h3 {
-    margin-top: 10px;
-    font-size: 1.5rem;
-    color: #9700ff;
-}
-
-.projet p {
-    font-size: 1.1rem;
-    color: #ddd;
-    margin-top: 10px;
-}
-
-.projet .btn {
+.contact-btn {
     background-color: #9700ff;
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 15px 20px;
     border-radius: 5px;
-    display: inline-block;
-    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    font-size: 1.1rem;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.projet .btn:hover {
+.contact-btn i {
+    margin-right: 10px;
+}
+
+.contact-btn:hover {
     background-color: #6e00d9;
     transform: scale(1.05);
 }
 
 /* Footer */
 footer {
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     color: white;
     text-align: center;
-    padding: 10px;
-    margin-top: 40px;
+    padding: 1rem;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
 }
 
 footer a {
@@ -201,17 +218,4 @@ footer a {
 
 footer a:hover {
     color: #9700ff;
-}
-
-/* Responsivité */
-@media screen and (max-width: 768px) {
-    .projet {
-        width: 48%;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .projet {
-        width: 100%;
-    }
 }

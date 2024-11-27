@@ -187,6 +187,13 @@ header nav ul li a {
     margin-top: 20px;
 }
 
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 20px;
+}
+
 #h1 {
     color: #9700ff;
     margin-bottom: 20px;
